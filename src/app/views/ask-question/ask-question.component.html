@@ -1,0 +1,16 @@
+
+<div class="container container-middle">
+  <h1>用户提问</h1>
+  <div class="question-container">
+    <div class="col-xs-9">
+      <input type="text" class="form-control" [(ngModel)]="question">
+    </div>
+    <div class="col-xs-3">
+      <button type="button" class="btn btn-primary" (click)="search()">查询</button>
+    </div>
+  </div>
+  <h1>查询结果</h1>
+  <div class="answer-container">
+    <textarea name="answer" id="" cols="30" rows="10" class="form-control">{{answer}}</textarea>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="container container-middle">
+  <div class="animated fadeIn">
+    <div class="card" *ngFor="let type of question_types; let i = index">
+      <div class="card-header" (click)="toggle(i)" style="cursor: pointer;">
+        {{type}}
+      </div>
+      <div class="card-body" [hidden]="!question_show[i]">
+        <div class="list-group">
+          <div style="cursor: pointer;" class="list-group-item" *ngFor="let item of question_list[i]; let j = index" (click)=ask_question(item)>
+            {{item}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

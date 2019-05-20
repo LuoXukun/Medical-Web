@@ -1,0 +1,111 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* // Override Boostrap variables
+@import "../node_modules/@coreui/coreui/scss/variables";
+
+// Import Bootstrap source files
+@import "../node_modules/@coreui/coreui/scss/bootstrap/bootstrap"; // from bootstrap node_modules
+
+// Mixins
+@import "../node_modules/@coreui/coreui/scss/mixins";
+
+// Animations
+@import "../node_modules/@coreui/coreui/scss/animate";
+
+// Vendors
+@import "../node_modules/@coreui/coreui/scss/vendors";
+
+// Components
+@import "../node_modules/@coreui/coreui/scss/card"; */
+
+.navbar {
+    position: relative !important;
+}
+
+.navbar > .container {
+    display: block !important;
+}
+
+/* .nav {
+    display: flex !important;
+} */
+
+ul {
+    display: block !important;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    border-radius: 3px;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+.navbar-brand {
+    background-image: url(./assets/img/logo.jpg);
+    width: 50px;
+    background-size: 75%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 50px 0;
+    text-align: center;
+    color: #999;
+}
+
+.container-small {
+    max-width: 500px;
+}
+
+.container-middle {
+    max-width: 800px;
+}
+
+/* .btn-primary {
+    background-color: #ea0c3c;
+    border-color: #ce0934;
+}
+
+.btn-primary:hover {
+    background-color: #db0836;
+    border-color: #db0836;
+} */
+
+#toggle-checkbox:checked ~ div {
+    display: block !important;
+}
+
+#toggle-label {
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #666;
+    display: none;
+}
+
+#toggle-label:hover {
+    color: #333;
+}
+
+.list-group {
+    text-align: center;
+}
+
+.list-group-item:hover {
+    color: #fff;
+    background-color: #337ab7;
+}
