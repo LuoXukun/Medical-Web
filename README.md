@@ -1,31 +1,27 @@
-# 基于图数据库的中文药品表示
+# MedicalRobot
 
-本科毕业设计 学生：罗旭坤
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
 
-本次毕设项目主要分为三个部分。
+## Development server
 
-## Medical_Graph
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-主要是基于医学文本构建以药品为核心的医学知识图谱的相关工作。
+## Code scaffolding
 
-医学知识图谱的存储介质为Neo4j图数据库，代码语言为python3，代码所需原始数据并未完全给出。
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-**Drug_Insert**: 将中文药品说明书结构化后导入图数据库，运行命令为`python insertData.py`。
+## Build
 
-**Interaction_Insert**: 将从某医院得到的药品相互作用表格原始数据导入图数据库，运行命令为`python parseInteraction.py`和`python insertInteraction.py`。
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-**BiLSTM-CRF**: 尝试使用CCKS2017中文电子病历数据集训练BiLSTM-CRF模型实现命名实体识别，探索医学数据的自动结构化，运行命令为`python transferData.py`、`python train.py`和`python predict.py`。
+## Running unit tests
 
-## Medical_Interface
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-一个问答应用的应用服务端，核心是基于模板匹配和知识库的问答系统，使用python3及Flask框架编写。
+## Running end-to-end tests
 
-在服务器中运行`python drug.py`便可作为后端工作。
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Medical_Web
+## Further help
 
-一个问答应用的网页客户端，使用Angular框架及Bootstrap框架进行设计实现。
-
-运行`ng build --prod --aot`后将dist文件夹中的内容复制至服务器即可访问。
-
-运行`ng serve --open`可在本地`http://localhost:4200/`访问。
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
